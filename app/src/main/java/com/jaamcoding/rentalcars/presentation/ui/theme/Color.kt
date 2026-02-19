@@ -1,4 +1,4 @@
-package com.jaamcoding.rentalcars.ui.theme
+package com.jaamcoding.rentalcars.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
