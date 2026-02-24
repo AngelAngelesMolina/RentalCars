@@ -1,14 +1,10 @@
 package com.jaamcoding.rentalcars.domain.model
 
 import androidx.annotation.DrawableRes
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.ui.graphics.Color
 import com.jaamcoding.rentalcars.R
-
-enum class CarBgType {
-    PRIMARY,
-    SECONDARY
-}
+import com.jaamcoding.rentalcars.presentation.ui.theme.Primary
+import com.jaamcoding.rentalcars.presentation.ui.theme.Secondary
 data class Car(
     val name: String,
     @DrawableRes val image: Int,
@@ -19,7 +15,7 @@ data class Car(
     val rentalDays: Int,
     val price: Int,
     val recommenders: List<Int>,
-    val bgColor: CarBgType
+    val bgColor: Color
 )
 
 
@@ -36,7 +32,7 @@ val luxuriousCars = listOf(
         recommenders = listOf(
             R.drawable.m_2, R.drawable.w_1, R.drawable.w_2
         ),
-        bgColor = CarBgType.PRIMARY
+        bgColor = Primary
     ),
     Car(
         name = "Rolls-Royce Phantom",
@@ -50,7 +46,7 @@ val luxuriousCars = listOf(
         recommenders = listOf(
             R.drawable.m_1, R.drawable.w_2, R.drawable.m_3
         ),
-        bgColor = CarBgType.SECONDARY
+        bgColor = Secondary
     ),
     Car(
         name = "Porsche 911 Turbo S",
@@ -64,7 +60,7 @@ val luxuriousCars = listOf(
         recommenders = listOf(
             R.drawable.m_3, R.drawable.w_1, R.drawable.m_1
         ),
-        bgColor = CarBgType.PRIMARY
+        bgColor = Primary
     ),
     Car(
         name = "Lamborghini Aventador",
@@ -78,14 +74,6 @@ val luxuriousCars = listOf(
         recommenders = listOf(
             R.drawable.w_1, R.drawable.w_2, R.drawable.m_2
         ),
-        bgColor = CarBgType.SECONDARY
+        bgColor = Secondary
     )
 )
-
-// TODO: In my UI I need to to something like this ->
-/* **
-val bgColor = when (car.bgType) {
-    CarBgType.PRIMARY -> MaterialTheme.colorScheme.primary
-    CarBgType.SECONDARY -> MaterialTheme.colorScheme.secondary
-}
- */
