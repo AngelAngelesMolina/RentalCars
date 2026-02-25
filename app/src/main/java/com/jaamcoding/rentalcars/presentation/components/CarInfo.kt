@@ -42,7 +42,8 @@ fun CardInfo(
                 top = 20.dp,
                 start = 20.dp
 
-            ), verticalAlignment = Alignment.CenterVertically
+            ),
+        verticalAlignment = Alignment.CenterVertically
     ) {
         Image(
             painter = painterResource(car.logo),
@@ -98,7 +99,7 @@ private fun CardInfoPrev() {
             modifier = Modifier
                 .fillMaxWidth()
                 .height(230.dp),
-            Car(
+            car = Car(
                 name = "Ferrari SF90 Stradale",
                 image = R.drawable.ferrari_car,
                 color = Color.Red,
