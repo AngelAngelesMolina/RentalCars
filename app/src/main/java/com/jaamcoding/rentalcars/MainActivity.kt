@@ -62,6 +62,8 @@ class MainActivity : ComponentActivity() {
                                     .fillMaxWidth()
                                     .hazeChild(state = hazeState)
                             )
+
+
                         }
                     },
                 ) { innerPadding ->
