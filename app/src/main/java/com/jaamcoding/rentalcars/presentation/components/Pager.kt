@@ -45,6 +45,7 @@ fun Pager(modifier: Modifier = Modifier) {
             modifier = Modifier.padding(horizontal = 22.dp)
         )
         Row(
+            modifier = Modifier.padding(bottom = 10.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Text(

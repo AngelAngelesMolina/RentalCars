@@ -68,8 +68,9 @@ class MainActivity : ComponentActivity() {
                 ) { innerPadding ->
                     HomeScreen(
                         modifier = Modifier
-                            .padding(innerPadding),
-                        hazeState = hazeState
+                            .fillMaxSize(),
+                        hazeState = hazeState,
+                        paddingValues = innerPadding
                     )
                 }
             }
